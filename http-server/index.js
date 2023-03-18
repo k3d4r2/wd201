@@ -39,10 +39,6 @@ http.createServer((request, response) => {
             response.write(registrationPage);
             response.end();
             break;
-        case "/script.js":
-            response.write(registrationScript);
-            response.end();
-            break;
         default:
             response.write(homePage);
             response.end();
