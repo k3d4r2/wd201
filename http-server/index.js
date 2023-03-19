@@ -12,7 +12,7 @@ fs.readFile("home.html", (err, data) => {
     homePage = data.toString();
 })
 
-fs.readFile("projects.html", (err, data) => {
+fs.readFile("project.html", (err, data) => {
     if (err) throw err;
     projectPage = data.toString();
 })
