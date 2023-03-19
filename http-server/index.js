@@ -22,10 +22,6 @@ fs.readFile("registration.html", (err, data) => {
     registrationPage = data.toString();
 })
 
-fs.readFile("script.js", (err, data) => {
-    if (err) throw err;
-    registrationScript = data.toString();
-})
 
 http.createServer((request, response) => {
     let url = request.url;
