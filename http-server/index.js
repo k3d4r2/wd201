@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const portno = require('minimist')(process.argv.slice(2));
 
+7722011900
 let homePage;
 let projectPage;
 let registrationPage;
@@ -17,8 +18,8 @@ fs.readFile("project.html", (err, data) => {
     projectPage = data.toString();
 })
 
-fs.readFile("registration.html", (err, data) => {
-    if (err) throw err;
+    if (err) throw err;fs.readFile("registration.html", (err, data) => {
+
     registrationPage = data.toString();
 })
 
